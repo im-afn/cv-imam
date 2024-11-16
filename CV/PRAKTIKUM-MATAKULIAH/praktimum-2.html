@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  input {
+    border: none;
+  }
+</style>
+
+<body>
+
+  <header>
+    <menu>
+      <ul>
+        <li><a href="../../home.html">Home</a></li>
+        <li><a href="../home-cv.html">CV Imam Arifin</a></li>
+        <li><a href="../MATAKULIAH/matakuliah.html">MataKuliah</a></li>
+        <li><a href="../MATAKULIAH/mk-pengenalan-pemrogaman.html">Pengenalan Pemrogaman</a></li>
+        <li><a href="praktimum-1.html">Praktimum 1</a></li>
+        <li><a href="praktimum-3.html">Praktimum 3</a></li>
+        <li><a href="praktimum-4.html">Praktimum 4</a></li>
+      </ul>
+    </menu>
+  </header>
+
+  <div style="display: flex; justify-content: center; text-align: left;">
+    <form action="">
+      <table border="1">
+        <thead>
+          <tr>
+            <th> <label for="url">Cari Situs Web:</label></th>
+            <th> <input type="url" placeholder="https://google.com"></th>
+          </tr>
+          <tr>
+            <th> <label for="search">Cari:</label></th>
+            <th> <input type="search" placeholder="Kata kunci"></th>
+          </tr>
+        </thead>
+      </table>
+    </form>
+  </div>
+
+  <br>
+
+  <div style="display: flex; justify-content: center;">
+    <form action="">
+      <table border="1">
+        <thead>
+          <tr>
+            <th colspan="2">
+              <h1>Form Pendaftaran</h1>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><label for="text">Nama Lengkap:</label></td>
+            <td><input type="text" id="text" placeholder="Masukkan nama lengkap" required></td>
+          </tr>
+          <tr>
+            <td> <label for="email">Email:</label></td>
+            <td><input type="email" id="email" placeholder="Masukkan email" required></td>
+          </tr>
+          <tr>
+            <td><label for="password">Kata Sandi:</label></td>
+            <td> <input type="password" id="password" placeholder="Masukkan kata sandi" required></td>
+          </tr>
+          <tr>
+            <td><label for="number">Usia Anda:</label></td>
+            <td> <input type="number" id="number" placeholder="Masukkan usia"></td>
+          </tr>
+          <tr>
+            <td><label for="date">Tanggal Lahir:</label></td>
+            <td><input type="date" id="date" name="tanggal_lahir"></td>
+          </tr>
+          <tr>
+            <td><label for="file">Unggah Berkas Anda:</label></td>
+            <td> <input type="file" id="file"></td>
+          </tr>
+          <tr>
+            <td><label for="radio">Jenis Kelamin:</label></td>
+            <td><input type="radio" value="Laki-laki"> Laki-laki<br>
+              <input type="radio" value="Perempuan"> Perempuan
+            </td>
+          </tr>
+          <tr>
+            <td><label for="checkbox">Hobi:</label></td>
+            <td>
+              <input type="checkbox" value="Membaca"> Membaca<br>
+              <input type="checkbox" value="Bermain Musik"> Bermain Musik<br>
+              <input type="checkbox" value="Olahraga"> Olahraga
+            </td>
+          </tr>
+          <tr>
+            <td><label for="select">Pendidikan Terakhir:</label></td>
+            <td>
+              <select id="select" name="pendidikan">
+                <option value="SMA">SMA</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Sarjana">Sarjana</option>
+                <option value="Magister">Magister</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="textarea">Tinggalkan Pesan:</label></td>
+            <td><textarea id="textarea" rows="5" placeholder="Tulis pesan anda..."></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="color">Pilih Warna Faforit:</label></td>
+            <td><input type="color"></td>
+          </tr>
+          <tr>
+            <td> <label for="range">Tingkat Kepuasan:</label></td>
+            <td> <input type="range" min="1" max="10"></td>
+          </tr>
+          <tr>
+            <td><label for="tel">Nomor Telepon:</label></td>
+            <td><input type="tel" placeholder="Contoh: +62 8123456789"></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <button type="submit"
+        style="width: 100px; height: 50px; background-color: rgb(111, 174, 230); border: none; border-radius: 5px;">Daftar</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
