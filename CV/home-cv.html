@@ -5,145 +5,186 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV IMAM ARIFIN</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+ ">
 </head>
 
-<body style="display: flex; flex-direction: column; align-items: center;">
-  <nav>
-    <menu>
-      <ul>
+<body>
+  <!-- <nav class="nav">
+    <menu class="menu">
+      <ul class="list">
         <li><a href="../index.html">Home</a></li>
         <li><a href="MATAKULIAH/matakuliah.html">Mata Kuliah</a></li>
-        <li><a href="MATAKULIAH/mk-pengenalan-pemrogaman.html">Pengenalan
-            Pemrogaman</a></li>
-        <li><a href="PRAKTIKUM-MATAKULIAH/praktimum-1.html">Praktimum 1</a>
-        </li>
-        <li><a href="PRAKTIKUM-MATAKULIAH/praktimum-2.html">Praktimum 2</a>
-        </li>
+        <li><a href="MATAKULIAH/mk-pengenalan-pemrogaman.html">Pengenalan Pemrogaman</a></li>
+        <li><a href="PRAKTIKUM-MATAKULIAH/praktimum-1.html">Praktimum 1</a></li>
+        <li><a href="PRAKTIKUM-MATAKULIAH/praktimum-2.html">Praktimum 2</a></li>
         <li><a href="../CV/LATIHAN/latihan-1.php">Latihan 1</a></li>
         <li><a href="../CV/LATIHAN/latihan-2.php">Latihan 2</a></li>
       </ul>
     </menu>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CV. Imam Arifin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="MATAKULIAH/matakuliah.html">Mata
+              Kuliah</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page"
+              href="MATAKULIAH/mk-pengenalan-pemrogaman.html">Pengenalan Pemrogaman</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Praktikum & Latihan</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="PRAKTIKUM-MATAKULIAH/praktimum-1.html">Praktimum 1</a></li>
+              <li><a class="dropdown-item" href="PRAKTIKUM-MATAKULIAH/praktimum-2.html">Praktimum 2</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="../CV/LATIHAN/latihan-1.php">Latihan 1</a></li>
+              <li><a class="dropdown-item" href="../CV/LATIHAN/latihan-2.php">Latihan 2</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pencarian.." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Cari</button>
+        </form>
+
+      </div>
+    </div>
   </nav>
 
+  <div class="container">
+    <div style="width: 80%; border: 2px solid black;">
+      <header>
+        <h1>
+          CV. <br>
+          Imam Arifin
+        </h1>
+        <p><b>NIM: <u>2402041***</u></b></p>
+        <p><b>Kelas: IF-B 1</b></p>
+        <p><em>Universitas Kh. Abd. Wahab Hasbullah, Fakultas Teknologi Informasi, Progam Studi Teknik Informatika</em>
+        </p>
+      </header>
 
-  <div style="width: 80%; border: 2px solid black;">
-    <header>
-      <h1>
-        CV. <br>
-        Imam Arifin
-      </h1>
-      <p><b>NIM: <u>2402041***</u></b></p>
-      <p><b>Kelas: IF-B 1</b></p>
-      <p><em>Universitas Kh. Abd. Wahab Hasbullah, Fakultas Teknologi Informasi, Progam Studi Teknik Informatika</em>
-      </p>
-    </header>
+      <main>
+        <h2>TENTANG DIRI SAYA</h2>
+        <p>
+          Nama saya <strong>Imam Arifin</strong> saya seorang Mahasiswa di <i>Universitas Kh. Abd. Wahab Hasbullah.</i>
+          Saat
+          ini
+          saya sedang
+          menempuh pendidikan di
+          jurusan Teknik Informatika, Fakultas Teknologi Informasi, saya berharap dapat terus
+          mengembangkan kemampuan saya untuk terus bisa memberikan hal baik bagi diri sendiri dan orang lain.
+        </p>
 
-    <main>
-      <h2>TENTANG DIRI SAYA</h2>
-      <p>
-        Nama saya <strong>Imam Arifin</strong> saya seorang Mahasiswa di <i>Universitas Kh. Abd. Wahab Hasbullah.</i>
-        Saat
-        ini
-        saya sedang
-        menempuh pendidikan di
-        jurusan Teknik Informatika, Fakultas Teknologi Informasi, saya berharap dapat terus
-        mengembangkan kemampuan saya untuk terus bisa memberikan hal baik bagi diri sendiri dan orang lain.
-      </p>
+        <hr>
+
+        <h2>DATA PRIBADI</h2>
+        <ul>
+          <li><b>Tempat, Tanggal Lahir</b> : Indonesia, 25 Januari</li>
+          <li><b>Alamat</b> : Dusun
+          </li>
+          <li><b>Jenis Kelamin</b> : Laki-Laki</li>
+          <li><b>Agama</b>: Islam Sejak Lahir</li>
+          <li><b>Kewarga Negaraan</b>: Indonesia</li>
+          <li><b>Status</b>: <mark>Masih Jomblo</mark> </li>
+        </ul>
+
+        <hr>
+
+        <h2>PENDIDIKAN</h2>
+        <p><b>Pendidikan Formal</b></p>
+        <ol>
+          <li>Madrasah </li>
+          <li>Madrasah</li>
+          <li>Madrasah </li>
+          <li>Universitas Kh. Abd. Wahab Hasbullah (2024-Sekarang) </li>
+        </ol>
+        <p><b>Pendidikan Non Formal</b></p>
+        <ul>
+          <li>Madrasah Diniah </li>
+          <li></li>
+          <li>Madrasah </li>
+        </ul>
+
+        <h3>PENDIDIKAN SAAT INI</h3>
+        <p>
+          UNWAHA JOMBANG</p>
+        <p>
+          Saat ini saya adalah mahasiswa di Universitas Kh. Abd. Wahab Hasbullah, Di Fakultas Teknologi Informasi,
+          Progam
+          Studi Teknik Informatika. Saya mulai masuk di kampus ini sejak bulan September 2024 hingga sekarang. Harapan
+          saya,
+          Saya bisa menyelesaikan pendidikan saya tepat pada waktunya dan semoga bisa melanjutkan ke jenjang pendidikan
+          selanjutnya.
+        </p>
+
+        <hr>
+
+        <h2>PENGALAMAN KERJA</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li>Pegawai (2017-Kapan)</li>
+          <li>Petugas (2020-Kapan)</li>
+          <li>Penjaga Stan Minuman Es (2022-Sekarang)</li>
+          <li>Kurir Pengantar Barang</li>
+        </ul>
+
+        <hr>
+
+        <h2>SKILL/KEAHLIAN</h2>
+        <p><b>Pemrogaman</b></p>
+        <ul>
+          <li>HTML</li>
+          <progress value="80" max="100"></progress>
+          <li>CSS</li>
+          <progress value="50" max="100"></progress>
+          <li>Javascript</li>
+          <progress value="30" max="100"></progress>
+          <li>PHP</li>
+          <progress value="20" max="100"></progress>
+        </ul>
+        <p><b>Lapangan</b></p>
+        <ul>
+          <li>Merawat</li>
+          <li>Assisten Teknisi</li>
+          <li>DLL</li>
+        </ul>
+
+        <hr>
+
+        <h2>KONTAK</h2>
+
+        <p>Anda bisa menghubungi saya jika ada keperluan lewat Media di bawah ini</p>
+        <ul>
+          <li>Instagram, Klik <a href="https://www.instagram.com/im.afn_">Di Sini</a></li>
+          <li>Facebook, Klik <a href="https://www.facebook.com/siar.bin.1">Di Sini</a></li>
+          <li>Email, arifinppbu@gmail.com </a></li>
+          <li>Whatsapp, 085290954828</a></li>
+        </ul>
+      </main>
 
       <hr>
-
-      <h2>DATA PRIBADI</h2>
-      <ul>
-        <li><b>Tempat, Tanggal Lahir</b> : Indonesia, 25 Januari</li>
-        <li><b>Alamat</b> : Dusun
-        </li>
-        <li><b>Jenis Kelamin</b> : Laki-Laki</li>
-        <li><b>Agama</b>: Islam Sejak Lahir</li>
-        <li><b>Kewarga Negaraan</b>: Indonesia</li>
-        <li><b>Status</b>: <mark>Masih Jomblo</mark> </li>
-      </ul>
-
-      <hr>
-
-      <h2>PENDIDIKAN</h2>
-      <p><b>Pendidikan Formal</b></p>
-      <ol>
-        <li>Madrasah </li>
-        <li>Madrasah</li>
-        <li>Madrasah </li>
-        <li>Universitas Kh. Abd. Wahab Hasbullah (2024-Sekarang) </li>
-      </ol>
-      <p><b>Pendidikan Non Formal</b></p>
-      <ul>
-        <li>Madrasah Diniah </li>
-        <li></li>
-        <li>Madrasah </li>
-      </ul>
-
-      <h3>PENDIDIKAN SAAT INI</h3>
-      <p>
-        UNWAHA JOMBANG</p>
-      <p>
-        Saat ini saya adalah mahasiswa di Universitas Kh. Abd. Wahab Hasbullah, Di Fakultas Teknologi Informasi, Progam
-        Studi Teknik Informatika. Saya mulai masuk di kampus ini sejak bulan September 2024 hingga sekarang. Harapan
-        saya,
-        Saya bisa menyelesaikan pendidikan saya tepat pada waktunya dan semoga bisa melanjutkan ke jenjang pendidikan
-        selanjutnya.
-      </p>
-
-      <hr>
-
-      <h2>PENGALAMAN KERJA</h2>
-      <ul>
-        <li></li>
-        <li></li>
-        <li>Pegawai (2017-Kapan)</li>
-        <li>Petugas (2020-Kapan)</li>
-        <li>Penjaga Stan Minuman Es (2022-Sekarang)</li>
-        <li>Kurir Pengantar Barang</li>
-      </ul>
-
-      <hr>
-
-      <h2>SKILL/KEAHLIAN</h2>
-      <p><b>Pemrogaman</b></p>
-      <ul>
-        <li>HTML</li>
-        <progress value="80" max="100"></progress>
-        <li>CSS</li>
-        <progress value="50" max="100"></progress>
-        <li>Javascript</li>
-        <progress value="30" max="100"></progress>
-        <li>PHP</li>
-        <progress value="20" max="100"></progress>
-      </ul>
-      <p><b>Lapangan</b></p>
-      <ul>
-        <li>Merawat</li>
-        <li>Assisten Teknisi</li>
-        <li>DLL</li>
-      </ul>
-
-      <hr>
-
-      <h2>KONTAK</h2>
-
-      <p>Anda bisa menghubungi saya jika ada keperluan lewat Media di bawah ini</p>
-      <ul>
-        <li>Instagram, Klik <a href="https://www.instagram.com/im.afn_">Di Sini</a></li>
-        <li>Facebook, Klik <a href="https://www.facebook.com/siar.bin.1">Di Sini</a></li>
-        <li>Email, arifinppbu@gmail.com </a></li>
-        <li>Whatsapp, 085290954828</a></li>
-      </ul>
-    </main>
-
-    <hr>
-    <footer style="text-align: center;">
-      &copy; 2024 Imam Arifin.
-    </footer>
-
+      <footer style="text-align: center;">
+        &copy; 2024 Imam Arifin.
+      </footer>
+    </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+  "></script>
 </body>
 
 </html>

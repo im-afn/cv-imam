@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pengenalan Pemrogaman</title>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+  ">
 </head>
 
 <style>
@@ -12,13 +15,17 @@
     background-color: rgb(49, 33, 33);
     color: #e9dede;
   }
+
+  th {
+    text-align: center;
+  }
 </style>
 
-<body style="display: flex; flex-direction: column; align-items: center;">
+<body>
 
-  <header>
-    <menu>
-      <ul>
+  <!-- <nav class="nav">
+    <menu class="menu">
+      <ul class="list">
         <li><a href="../../index.html">Home</a></li>
         <li><a href="../home-cv.html">CV Imam Arifin</a></li>
         <li><a href="matakuliah.html">MataKuliah</a></li>
@@ -26,553 +33,594 @@
         <li><a href="../PRAKTIKUM-MATAKULIAH/praktimum-2.html">Praktimum 2</a></li>
       </ul>
     </menu>
-  </header>
+  </nav> -->
 
-  <p style="max-width: 600px;">
-    <b>Catatan:</b> Level Pemahaman materi yang sudah di pelajari (0) Tidak tahu, (1) Tahu tapi belum mengerti, (2)
-    Mengerti tetapi belum
-    dipraktekkan, (3)Sudah dipraktekkan tetapi belum paham (hanya bisa meniru), (4)Paham sehingga bisa membuat ulang
-    pada studi kasus yang baru/berbeda.
-  </p>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CV. Imam Arifin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
 
-  <div>
-    <main>
-      <table border="1">
-        <thead>
-          <tr>
-            <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
-          </tr>
-          <tr>
-            <th>Materi Pemrogaman</th>
-            <th>0</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Definisi Perogram</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Definisi Pemrogaman</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Bahasa Pemrogaman</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-        </tbody>
-      </table>
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../home-cv.html">CV Imam
+              Arifin</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="matakuliah.html">MataKuliah</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Praktikum & Latihan</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../PRAKTIKUM-MATAKULIAH/praktimum-1.html">Praktimum 1</a></li>
+              <li><a class="dropdown-item" href="../PRAKTIKUM-MATAKULIAH/praktimum-2.html">Praktimum 2</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item disabled" href="../CV/LATIHAN/latihan-1.php">Latihan 1</a></li>
+              <li><a class="dropdown-item disabled" href="../CV/LATIHAN/latihan-2.php">Latihan 2</a></li>
+            </ul>
+          </li>
+        </ul>
 
-      <br>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pencarian.." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Cari</button>
+        </form>
 
-      <table border="1">
-        <thead>
-          <tr>
-            <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
-          </tr>
-          <tr>
-            <th>Materi HTML 1</th>
-            <th>0</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Menulis di VSCODE</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Menampilkan pada Browser</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Aturan Penulisan HTML</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Menulis Tag HTML</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Bahasa Pemrogaman</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-        </tbody>
-      </table>
+      </div>
+    </div>
+  </nav>
 
-      <br>
+  <div class="container">
+    <p style="max-width: 600px;">
+      <b>Catatan:</b> Level Pemahaman materi yang sudah di pelajari (0) Tidak tahu, (1) Tahu tapi belum mengerti, (2)
+      Mengerti tetapi belum
+      dipraktekkan, (3)Sudah dipraktekkan tetapi belum paham (hanya bisa meniru), (4)Paham sehingga bisa membuat ulang
+      pada studi kasus yang baru/berbeda.
+    </p>
 
-      <table border="1">
-        <thead>
-          <tr>
-            <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
-          </tr>
-          <tr>
-            <th>Materi HTML 2</th>
-            <th>0</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Kepanjangan HTML</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Definisi HTML</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Hypertext</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>HTML Element</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>HTML Tags</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>HTML Atribut</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>HTML Struktur</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-        </tbody>
-      </table>
+    <div>
+      <main>
+        <table class="table-bordered" border="1">
+          <thead>
+            <tr>
+              <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
+            </tr>
+            <tr>
+              <th>Materi Pemrogaman</th>
+              <th>0</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Definisi Perogram</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Definisi Pemrogaman</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Bahasa Pemrogaman</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <br>
+        <br>
 
-      <table border="1">
-        <thead>
-          <tr>
-            <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
-          </tr>
-          <tr>
-            <th>Menampilkan Data</th>
-            <th>0</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Header</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Menu</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Nav</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Footer</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Main</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Article</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Section</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Inline</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Block</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Div & Span</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="table-bordered" border="1">
+          <thead>
+            <tr>
+              <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
+            </tr>
+            <tr>
+              <th>Materi HTML 1</th>
+              <th>0</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Menulis di VSCODE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Menampilkan pada Browser</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Aturan Penulisan HTML</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Menulis Tag HTML</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Bahasa Pemrogaman</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <br>
+        <br>
 
-      <table border="1">
-        <thead>
-          <tr>
-            <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
-          </tr>
-          <tr>
-            <th>Materi PHP 1</th>
-            <th>0</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Kepanjangan PHP</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Definisi PHP</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Server</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Cara Kerja PHP</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Menginstall XAMPP</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Menjalankan XAMPP</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Menjalankan XAMPP Dari Browser</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="table-bordered" border="1">
+          <thead>
+            <tr>
+              <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
+            </tr>
+            <tr>
+              <th>Materi HTML 2</th>
+              <th>0</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kepanjangan HTML</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Definisi HTML</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Hypertext</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>HTML Element</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>HTML Tags</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>HTML Atribut</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>HTML Struktur</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <br>
+        <br>
 
-      <table border="1">
-        <thead>
-          <tr>
-            <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
-          </tr>
-          <tr>
-            <th>Materi PHP 2</th>
-            <th>0</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Devinisi Variable</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Membuat Variable</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Jenis Tipe Data</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Definisi Operator</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Operator Matematika</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Operator Assignment</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Operator Increment & Decrement</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Operator Perbandingan (Relasi)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Operator Logika</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Operator Bhitise</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Operator Ternary</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="table-bordered" border="1">
+          <thead>
+            <tr>
+              <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
+            </tr>
+            <tr>
+              <th>Menampilkan Data</th>
+              <th>0</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Header</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Menu</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Nav</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Footer</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Main</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Article</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Section</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Inline</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Block</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Div & Span</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <br>
+        <br>
 
-      <table border="1">
-        <thead>
-          <tr>
-            <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
-          </tr>
-          <tr>
-            <th>Materi Output & Input</th>
-            <th>0</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Definisi Output</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Audio</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Video</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Definisi Input</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Form Element</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-          <tr>
-            <td>Input Element</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>✔</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="table-bordered" border="1">
+          <thead>
+            <tr>
+              <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
+            </tr>
+            <tr>
+              <th>Materi PHP 1</th>
+              <th>0</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kepanjangan PHP</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Definisi PHP</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Server</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Cara Kerja PHP</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Menginstall XAMPP</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Menjalankan XAMPP</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Menjalankan XAMPP Dari Browser</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+          </tbody>
+        </table>
 
+        <br>
 
-      <hr>
-      <footer style="text-align: center;">
-        &copy; 2024 Imam Arifin.
-      </footer>
+        <table class="table-bordered" border="1">
+          <thead>
+            <tr>
+              <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
+            </tr>
+            <tr>
+              <th>Materi PHP 2</th>
+              <th>0</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Devinisi Variable</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Membuat Variable</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Jenis Tipe Data</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Definisi Operator</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Operator Matematika</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Operator Assignment</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Operator Increment & Decrement</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Operator Perbandingan (Relasi)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Operator Logika</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Operator Bhitise</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Operator Ternary</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br>
+
+        <table class="table-bordered" border="1">
+          <thead>
+            <tr>
+              <th colspan="6" style="width: 600px;">Tingkat Pemahaman</th>
+            </tr>
+            <tr>
+              <th>Materi Output & Input</th>
+              <th>0</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Definisi Output</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Definisi Input</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Form Element</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td>Input Element</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>✔</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+    <hr>
+    <footer style="text-align: center;">
+      &copy; 2024 Imam Arifin.
+    </footer>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+  "></script>
 </body>
 
 </html>
